@@ -7,6 +7,13 @@
 # 3. Öppna mappen i Visual Studio Code genom att välja File > Open Folder...
 # 4. Testa!
 # 5. Ändra koden för att skapa det vintrigaste snöfallet. 
+# Tips: 
+#   -Fler snöflingor
+#   -Olika fallhastigheter
+#   -Vind?
+#   -Använd flera olika bildfiler för snöflingorna
+#   -Lägg in en bakgrundsbild
+#   -Låt snön landa på marken
 
 # Fungerar det inte? Hör av dig till Martin på Hangouts och berätta vilka felmeddelanden du får
 
@@ -108,7 +115,7 @@ while True:
     # (Om ett slumptal mellan 0 och 99 blir 0),
     if random.randint(0, 100) == 0:
         # SKAPA EN NY SNÖFLINGA
-        ny_flinga = Flinga(sprite = flinga_sprite, max_fallhastighet= 10, hastighet_x= 3)
+        ny_flinga = Flinga(sprite = flinga_sprite)
 
         #Lägg till den nya snöflingan i listan
         flingor.append(ny_flinga)
